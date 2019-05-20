@@ -12,12 +12,41 @@
                 crossorigin="anonymous">
         <link rel="stylesheet" href="./js/slick/slick.css">
         <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 </head>
 
 <body>
         <div class="container-fluid">
                 <header>
-
+                                <nav>
+                                                <div class="nav-wrapper ">
+                                                  <a href="./index.html" class="brand-logo ml-3">BESTPRICES</a>
+                                                  <a href="#" data-target="sidenav-bestprices" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                                                  <form class="show-on-med-and-down">
+                                                                <div class="input-field">
+                                                               
+                                                                  <input id="search" type="search" placeholder="¿Qué estás buscando?" required> <i class="material-icons label-search">search</i>
+                                                               
+                                                                </div>
+                                                              </form>
+                                                  <ul class="right hide-on-med-and-down">
+                                                                <li><a href="index.html">Inicio</a></li>
+                                                                <li><a href="#section-nuevos">Articulos Nuevos</a></li>
+                                                                <li><a href="">Categorias</a></li>
+                                                                <li><a href="login.html">Iniciar Sesión</a></li>
+                                                  </ul>
+                                                </div>
+                                              </nav>
+                                            
+                                              <ul class="sidenav" id="sidenav-bestprices">
+                                                <li><a href="index.html">Inicio</a></li>
+                                                <li><a href="#section-nuevos">Articulos Nuevos</a></li>
+                                                <li><a href="">Categorias</a></li>
+                                                <li><a href="login.html">Iniciar Sesión</a></li>
+                                              </ul>
+                        <!--
                         <nav class="navbar navbar-expand-lg nav-bestprices ">
                                 <a class="navbar-brand ml-3 text-white" href="#">BESTPRICES</a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -53,6 +82,9 @@
 
                                 </div>
                         </nav>
+                        <div class="header-animation">
+                                <p>Encuentras lo que buscas al mejor precio </p>
+                        </div>-->
                         <img src="./img/hero.jpg" alt="image hero" class="img-fluid   ">
 
 
@@ -313,7 +345,7 @@
                         </div>
                 </div>
 
-                <div class="row section-nuevos ">
+                <div class="row section-nuevos " id="section-nuevos">
                         <h2 class="col-lg-4 offset-lg-2 text-left mt-5">Articulos Nuevos</h2>
                         <div class="container-articles mb-5 ">
 
@@ -553,10 +585,11 @@
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script type="text/javascript" src="./js/slick/slick.min.js"></script>
         <script>
                 $(document).ready(function () {
-
+                        $('.sidenav').sidenav();
                         $(function () {
                                 $('.container-articles').slick({
                                         infinite: true,

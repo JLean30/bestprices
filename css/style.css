@@ -42,12 +42,12 @@ body {
   padding: 0; }
 
 .background-login {
-  background: #373B44;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #2DA2D0, #2DCDD2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #2DA2D0, #2DCDD2);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: url("../img/svg/background-login.svg");
+  /*
+    background: #373B44;  /* fallback for old browsers
+    background: -webkit-linear-gradient(to bottom, #2DA2D0, #2DCDD2); /* Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to bottom, #2DA2D0, #2DCDD2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+     */
   background-attachment: fixed; }
   @media only screen and (max-width: 480px) {
     .background-login {
@@ -56,19 +56,51 @@ body {
     .background-login {
       background: unset; } }
 
-.nav-bestprices {
+header .header-animation {
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: -1px;
+  width: 868px;
+  height: 278px;
+  background-color: #000000ba;
+  font-size: 80px;
+  color: aliceblue;
+  font-weight: 500; }
+  header .header-animation p {
+    margin-left: 23px;
+    margin-top: 9px; }
+
+header nav {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
   width: 100%;
-  padding: 10px; }
-  .nav-bestprices .btn-search_navbar {
+  padding: 10px;
+  padding: 1em !important; }
+  header nav form {
+    height: 100%;
+    width: 41%;
+    display: inline-block;
+    /* position: relative; */
+    /* left: 400px; */
+    margin-left: 21%;
+    background: white; }
+    header nav form .label-search {
+      color: black;
+      cursor: pointer; }
+    @media only screen and (max-width: 993px) {
+      header nav form {
+        display: none; } }
+  header nav .nav-wrapper {
+    top: -15px; }
+  header nav .btn-search_navbar {
     background-color: transparent;
     border: 2px solid white; }
-  .nav-bestprices .input-header_search {
+  header nav .input-header_search {
     background-color: transparent;
     color: white; }
-    .nav-bestprices .input-header_search::placeholder {
+    header nav .input-header_search::placeholder {
       color: #ffffff33; }
 
 .section-inicio {
@@ -252,6 +284,9 @@ body {
   .container-login .form-login {
     transition: all ease 0.5s;
     margin: auto; }
+    @media only screen and (min-width: 1400px) {
+      .container-login .form-login {
+        width: 75%; } }
   .container-login .form-login__text-conditions {
     font-size: 10px;
     width: 82%;
@@ -346,3 +381,9 @@ body {
         margin-left: 15px;
         margin-right: 15px;
         margin-bottom: 15px; }
+
+@keyframes slide-header {
+  0% {
+    transform: translateX(-900px); }
+  90% {
+    transform: rotate(xx) translateX(0); } }
