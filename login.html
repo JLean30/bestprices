@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="background-login">
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-md-12 text-left ">
+                <a class="btn btn-inicio mt-4" href="./index.html"> < Inicio</a>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-6 col-xl-4 container-login mx-auto">
+                    <img src="./img/logo-inicio.png" alt="brand image" class="mt-4">
+                <div class="form-login ">
+                    
+                    <h2 class="tittle mt-2" id="title-login">
+                        Login
+                    </h2>
+                    <div class="form-group" id="form-group__email">
+                        <label for="">Email</label>
+                        <input type="email" id="email" class="form-control input-login">
+                    </div>
+                    <div class="form-group" id="form-group__pass">
+                        <Label class="pass" id="label-pwd">Password</Label>
+                        <input type="password" id="pass" class="form-control input-login"><br>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="sesion-activa">
+                            <label class="custom-control-label" for="sesion-activa">Mantener Sesion Activa</label>
+                        </div>
+                    <button class="btn btn-ingresar mt-2 mb-2" id="login-btn">Ingresar</button>
+                    <p class="text-muted form-login__text-conditions">Al hacer clic en "Ingresar", aceptas nuestras <span>Condiciones</span> , la<span> Política de datos</span>  y la <span>Política de cookies</span> .</p>
+                    <br>
+                    <div>
+                        <p id="recover-link" class="link-recover">¿Has olvidado tu contraseña?</p>
+                        <p class="btn-ingresar btn-crearCuenta mb-4 " id="btn-crearCuenta">Crear Cuenta</p>
+                    </div>
+                </div> <!--Termina form login-->
+                <div class="form-recover">
+                    <h2 class="tittle mt-4 mb-3" id="title-login">
+                        Recuperar Contraseña
+                    </h2>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email-recover" id="email-recover" class="form-control input-login">
+
+                    </div>
+
+                    <button class="btn btn-ingresar mt-2 mb-4" id="recover-btn">Recuperar</button>
+                </div><!--termina form recuperar-->
+                <div class="form-registrar">
+                    <h2 class="tittle mt-3" id="title-login">
+                        Registro
+                    </h2>
+                    <div class="form-group" >
+                        <input type="text" id="Nombre-registro" class="form-control input-login input-register" placeholder="Apellidos">
+                        <input type="text" id="apellido-registro" class="form-control input-login input-register" placeholder="Apellidos">
+                        <input type="email" id="email-registro" class="form-control input-login input-register" placeholder="Email">
+                        <input type="text" id="NombreUsuario-registro" class="form-control input-login input-register" placeholder="nombre Usuario">
+              
+                        <input type="password" id="pass-registro" class="form-control input-login input-register" placeholder="Contraseña">
+               
+                        <input type="password" id="passR-registro" class="form-control input-login input-register" placeholder="Repetir Contraseña">
+                
+                        <input type="text" id="ubicacion-registro" class="form-control input-login input-register" placeholder="Ubicación">
+                        
+                    </div>
+                    <button class="btn btn-ingresar mt-2 mb-2" id="registro-btn">Registrarse</button>
+                    <p class="text-muted form-login__text-conditions">Al hacer clic en "Registrar", aceptas nuestras <span>Condiciones</span> , la<span> Política de datos</span>  y la <span>Política de cookies</span> .</p>
+                    <br>
+                    <div>
+                        <p class="btn-ingresar btn-crearCuenta btn-login mb-4 " id="btn-login">¿Ya tienes cuenta?</p>
+                    </div>
+            </div>
+
+
+
+
+
+         
+        </div>
+
+        </div>
+    </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script>
+
+            function login() {
+                $pass = $('#pass').val();
+                $email = $('#email').val();
+                $.ajax({
+                    method: "GET",
+                    url: "http://localhost/laravel/public/login/" + $email + "/" + $pass
+                })
+                    .done(function (msg) {
+                        alert(msg[0].name);
+                    })
+            }
+            function recover() {
+
+                $email = $('#email').val();
+                $.ajax({
+                    method: "GET",
+                    url: "http://localhost/laravel/public/recover/" + $email
+                })
+                    .done(function (msg) {
+                        alert(msg);
+                    })
+            }
+            $('document').ready(function () {
+                //eventos del label
+                $('#email').focus(function () {
+                    $('#form-group__email').addClass("form-group__focus")
+                });
+                $('#email').blur(function () {
+                    if ($('#email').val() == "") {
+                        $('#form-group__email').removeClass("form-group__focus")
+                    }
+
+                });
+                $('#pass').focus(function () {
+                    $('#form-group__pass').addClass("form-group__focus")
+                });
+                $('#pass').blur(function () {
+                    if ($('#pass').val() == "") {
+                        $('#form-group__pass').removeClass("form-group__focus")
+                    }
+
+                });
+                $('#login-btn').click(function () {
+                    login();
+
+                })
+                $('#recover-link').click(function () {
+                    $('.form-login').hide();
+                    $('.form-recover').show();
+
+
+                })
+                $('#btn-crearCuenta').click(function(){
+                    $('.form-login').hide();
+                    $('.form-registrar').show();
+                })
+                $('#btn-login').click(function(){
+                    $('.form-registrar').hide();
+                    $('.form-login').show();
+                    
+                })
+                
+                $('#recover-btn').click(function () {
+                    recover();
+                    $('.form-login').show();
+                    $('.form-recover').hide();
+
+
+
+                });
+
+            });
+        </script>
+
+
+</body>
+
+</html>
