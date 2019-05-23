@@ -110,7 +110,7 @@ header{
     
         .search-navbar{
         justify-content: center;
-        width: 50%;
+        width: 33%;
         @include respond-to($phone){
             display: none;
         }
@@ -125,10 +125,16 @@ header{
     
     
         .input-search{
-            width: 50%;
+            width: 80%;
         }
         }
     }
+}
+
+.card{
+    border: unset !important;
+    border-radius: unset !important;
+   
 }
 .card-img-top{
     
@@ -156,7 +162,7 @@ header{
         /* top: 25px; */
         width: 100%;
         background-color: #e1e1e1;
-        height: 2px;
+        height: 1px;
         
     }
 }
@@ -216,13 +222,14 @@ header{
 
 }
 .card-tipoProducto{
+    background-color: $colorTitulos !important;
     top: 2em;
     padding: 0.3em;
     width: 8em;
 }
-.tamanno-tittle__cel{
+.tamanno-title__cel{
     @include respond-to($phone){
-        font-size: 1.5em !important;
+        font-size: 1.2em !important;
     }
 }
 .centrado-cel{
@@ -297,11 +304,20 @@ footer{
     max-width: 85%;
     border-bottom: 2px solid rgba(128, 128, 128, 0.678);
     margin: auto;
-    input{
-        width: 90% !important;
+    @include respond-to($phone){
+        flex-flow: column;
+        width: 300px;
+        max-width: 100% !important;
     }
+
+    
     img{
         height: 15.2vw !important;
+        margin-right: 1.5em;
+        @include respond-to($phone){
+            margin: auto;
+           height: 41vw  !important;
+        }
     }
 }
 

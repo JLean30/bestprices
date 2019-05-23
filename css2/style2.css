@@ -118,7 +118,7 @@ header {
           font-size: 1em; } }
     header nav .search-navbar {
       justify-content: center;
-      width: 50%; }
+      width: 33%; }
       @media only screen and (max-width: 480px) {
         header nav .search-navbar {
           display: none; } }
@@ -129,7 +129,11 @@ header {
         header nav .search-navbar {
           display: none; } }
       header nav .search-navbar .input-search {
-        width: 50%; }
+        width: 80%; }
+
+.card {
+  border: unset !important;
+  border-radius: unset !important; }
 
 .card-img-top {
   padding: 5%;
@@ -152,7 +156,7 @@ header {
   /* top: 25px; */
   width: 100%;
   background-color: #e1e1e1;
-  height: 2px; }
+  height: 1px; }
 
 .container {
   margin-top: 2.5em; }
@@ -202,13 +206,14 @@ header {
     margin: auto; }
 
 .card-tipoProducto {
+  background-color: #1B6A89 !important;
   top: 2em;
   padding: 0.3em;
   width: 8em; }
 
 @media only screen and (max-width: 480px) {
-  .tamanno-tittle__cel {
-    font-size: 1.5em !important; } }
+  .tamanno-title__cel {
+    font-size: 1.2em !important; } }
 
 @media only screen and (max-width: 480px) {
   .centrado-cel {
@@ -262,7 +267,15 @@ footer {
   max-width: 85%;
   border-bottom: 2px solid rgba(128, 128, 128, 0.678);
   margin: auto; }
-  .media input {
-    width: 90% !important; }
+  @media only screen and (max-width: 480px) {
+    .media {
+      flex-flow: column;
+      width: 300px;
+      max-width: 100% !important; } }
   .media img {
-    height: 15.2vw !important; }
+    height: 15.2vw !important;
+    margin-right: 1.5em; }
+    @media only screen and (max-width: 480px) {
+      .media img {
+        margin: auto;
+        height: 41vw  !important; } }
