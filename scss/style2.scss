@@ -1,0 +1,324 @@
+//inicio css
+//scss carousel
+@import "./media-queries";
+@import "./variables.scss";
+@import "./search-bar.scss";
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+  
+body{
+    font-family: 'fira-sans', sans-serif;
+}
+.container-fluid{
+    padding: 0;
+}
+.row{
+     margin-right: 0 !important; 
+     margin-left: 0 !important; 
+}
+
+a{
+    cursor: pointer;
+    color: $colorTitulos;
+    text-decoration: none;
+
+    
+}
+
+.background-login{
+    background: url(../img/svg/background-login.svg);
+    background-attachment: fixed;
+  
+    position: absolute;
+    @include respond-to($phone){
+        background: unset;
+    }
+    @include respond-to($tablet-portrait){
+        background: unset;
+    }
+}
+.btn-bestprices{
+    border-color: $colorBotones !important;
+    color: white;
+    box-shadow: unset;
+
+
+    &:hover{
+        background-color: $colorBotones;
+        border-color: unset;
+        color: white !important;
+    }
+    &:focus{
+        background-color: $colorBotones;
+        box-shadow: unset;
+    }
+    
+    &:active{
+        background-color: $colorBotones !important;
+        border-color: unset !important;
+    }
+}
+
+.btn-sesion{
+    color: white;
+    box-shadow: unset;
+    background-color: #33425D !important;
+    &:hover{
+        background-color: white !important;
+        color: #33425D !important;
+    }
+}
+
+.btn-crearCuenta{
+    color: #33425D;
+    width: 44%;
+    background: transparent;
+    
+   }
+header{
+    /*
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 1;
+      }*/
+      nav{
+        background-color: $colorNav;
+    
+        @include respond-to($phone){
+            position: unset !important;
+        }
+    
+        .navbar-brand{
+            font-size: 1.9em;
+            
+            @include respond-to($phone){
+                font-size: 1em;
+            }
+            @include respond-to($tablet-portrait){
+                font-size: 1em;
+            }
+            @include respond-to($tablet-landscape){
+                font-size: 1em;
+            }
+        }
+    
+        .search-navbar{
+        justify-content: center;
+        width: 33%;
+        @include respond-to($phone){
+            display: none;
+        }
+        @include respond-to($tablet-portrait){
+            display: none;
+        }
+        @include respond-to($tablet-landscape){
+            display: none;
+        }
+    
+    
+    
+    
+        .input-search{
+            width: 80%;
+        }
+        }
+    }
+}
+
+.card{
+    border: unset !important;
+    border-radius: unset !important;
+   
+}
+.card-img-top{
+    
+    padding: 5%;
+    height: 15vw;
+    object-fit: contain;
+    @include respond-to($phone){
+       height: auto;
+    }
+}
+.card-deck__second{
+    @include respond-to($phone){
+        display: none;
+    }
+}
+.color-title{
+    color: $colorTitulos !important;
+}
+
+
+.linea-horizontal{
+    &::after{
+        content: "";
+        display: block;
+        /* top: 25px; */
+        width: 100%;
+        background-color: #e1e1e1;
+        height: 1px;
+        
+    }
+}
+.container{
+    margin-top: $espaciosSections;
+}
+.titulo{
+    font-size: $tamannoTitulo;
+    &::after{
+        display: none;
+    }
+    @include respond-to($phone){
+        font-size: 1.5em;
+    }
+    @include respond-to($tablet-portrait){
+        font-size: 1.5em;
+    }
+    @include respond-to($tablet-landscape){
+        font-size: 1.5em;
+    }
+}
+// login
+
+.form-recover{
+    display: none;
+    width: 80%;
+}
+
+.form-registrar{
+    display: none;
+    width: 80%;
+  
+}
+.container-login{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 10px;
+    margin-top: 5%;
+    margin-bottom:3%; 
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+    max-width: 484px;
+    @include respond-to($phone){
+        box-shadow: unset !important;
+    }
+    @include respond-to($tablet-portrait){
+        box-shadow: unset !important;
+    }
+    @include respond-to($tablet-landscape){
+        box-shadow: unset !important;
+    }
+
+    .form-group{
+        width: 70%;
+    margin-bottom: 1rem;
+    margin: auto;
+    }
+
+}
+.card-tipoProducto{
+    background-color: $colorTitulos !important;
+    top: 2em;
+    padding: 0.3em;
+    width: 8em;
+}
+.tamanno-title__cel{
+    @include respond-to($phone){
+        font-size: 1.2em !important;
+    }
+}
+.centrado-cel{
+    @include respond-to($phone){
+        text-align: center;
+    }
+}
+.img-circular{
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(34% at 50% 50%);
+    max-height: 400px;
+    @include respond-to($phone){
+        max-width: 300px;
+    max-height: 280px;
+    }
+}
+
+.btn-atras{
+    cursor: pointer;
+    &:hover{
+        color: $colorBotones !important;
+    }
+    @include respond-to($phone){
+        color: $colorTitulos !important;
+    }
+    @include respond-to($tablet-portrait){
+        color: $colorTitulos !important;
+    }
+}
+
+//nav del perfil
+
+.nav-pills .nav-link.active{
+    color: $colorTitulos;
+    background-color: unset !important;
+    border-bottom: 3px solid $colorTitulos;
+    border-radius: 0 !important;
+}
+.margenes-phone{
+    @include respond-to($phone){
+        margin-right: 5px !important;
+    }
+    
+}
+footer{
+
+    text-align: center;
+    color: white;
+}
+
+.section-gray{
+    background-color: $backgroundGray !important;
+}
+
+//search
+
+.form-search{
+    width: 50%;
+    margin:auto;
+
+    .button-search{
+        background-color: $colorTitulos !important;
+       
+
+    }
+
+
+}
+
+.media{
+    background-color: white;
+    max-width: 85%;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.678);
+    margin: auto;
+    @include respond-to($phone){
+        flex-flow: column;
+        width: 300px;
+        max-width: 100% !important;
+    }
+
+    
+    img{
+        height: 15.2vw !important;
+        margin-right: 1.5em;
+        @include respond-to($phone){
+            margin: auto;
+           height: 41vw  !important;
+        }
+    }
+}
+
+
