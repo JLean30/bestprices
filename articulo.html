@@ -52,18 +52,19 @@
                                 </div>
                         </nav>
                         <div class="section-views">
-                                <div class="row justify-content-center">
-                                        <div class="col-xl-4 col-xs-12 float-right">
-                                                <img class="img-fluid" src="img/msi.png" alt="">
-                                                <div class="row d-flex justify-content-around">
-                                                        <ul class="list-inline">
-                                                                <li class="list-inline-item"><img class="img-fluid" src="img/msi2.png" alt="" width="130px"></li>
-                                                                <li class="list-inline-item"><img class="img-fluid" src="img/msi3.png" alt="" width="130px"></li>
-                                                                <li class="list-inline-item"><img class="img-fluid" src="img/msi4.png" alt="" width="130px"></li>
-                                                                <li class="list-inline-item"><img class="img-fluid" src="img/msi5.png" alt="" width="130px"></li>
-                                                        </ul>
-                                                </div>
-                                        </div>
+                                        <div class="row justify-content-center">
+                                                        <div class="col-xl-4 col-xs-12 float-right">
+                                                            <img class="img-fluid" id="img" src="img/msi.png" alt="">
+                                                            <div class="row d-flex justify-content-around">
+                                                                <ul class="list-inline">
+                                                                    <li class="list-inline-item"><img id="1" class="img-fluid" src="img/msi.png" alt="" width="100px"></li>
+                                                                    <li class="list-inline-item"><img id="2" class="img-fluid" src="img/msi2.png" alt="" width="100px"></li>
+                                                                    <li class="list-inline-item"><img id="3" class="img-fluid" src="img/msi3.png" alt="" width="100px"></li>
+                                                                    <li class="list-inline-item"><img id="4" class="img-fluid" src="img/msi4.png" alt="" width="100px"></li>
+                                                                    <li class="list-inline-item"><img id="5" class="img-fluid" src="img/msi5.png" alt="" width="100px"></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                         <div
                                                 class="col-xl-4 col-xs-12 container-form d-flex justify-content-right flex-column">
                                                 <h1>Msi Gaming X Trio GeoForce RTX 2080Ti</h1>
@@ -144,5 +145,34 @@
 
 
 </body>
+<script>
+        $(document).ready(function () {
+                $("#1").click(function (event) {
+                        event.preventDefault();
+                        var next_imagen = "img/msi.png";
+                        $("#img").attr("src", next_imagen);
+                });
+                $("#2").click(function (event) {
+                        event.preventDefault();
+                        var next_imagen = "img/msi2.png";
+                        $("#img").attr("src", next_imagen);
+                });
+                $("#3").click(function (event) {
+                        event.preventDefault();
+                        var next_imagen = "img/msi3.png";
+                        $("#img").attr("src", next_imagen);
+                });
+                $("#4").click(function (event) {
+                        event.preventDefault();
+                        var next_imagen = "img/msi4.png";
+                        $("#img").attr("src", next_imagen);
+                });
+                $("#5").click(function (event) {
+                        event.preventDefault();
+                        var next_imagen = "img/msi5.png";
+                        $("#img").attr("src", next_imagen);
+                });
+        });
+</script>
 
 </html>
