@@ -10,627 +10,365 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
                 integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
                 crossorigin="anonymous">
-        <link rel="stylesheet" href="./js/slick/slick.css">
-        <link rel="stylesheet" href="./css/style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="./css2/style2.css">
 
 </head>
 
 <body>
-        <div class="container-fluid">
-                <header>
-                                <nav>
-                                                <div class="nav-wrapper ">
-                                                  <a href="./index.html" class="brand-logo ml-3">BESTPRICES</a>
-                                                  <a href="#" data-target="sidenav-bestprices" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                                                  <form class="show-on-med-and-down">
-                                                                <div class="input-field">
-                                                               
-                                                                  <input id="search" type="search" placeholder="¿Qué estás buscando?" required> <i class="material-icons label-search">search</i>
-                                                               
-                                                                </div>
-                                                              </form>
-                                                  <ul class="right hide-on-med-and-down">
-                                                                <li><a href="index.html">Inicio</a></li>
-                                                                <li><a href="#section-nuevos">Articulos Nuevos</a></li>
-                                                                <li><a href="">Categorias</a></li>
-                                                                <li><a href="login.html">Iniciar Sesión</a></li>
-                                                  </ul>
-                                                </div>
-                                              </nav>
-                                            
-                                              <ul class="sidenav" id="sidenav-bestprices">
-                                                <li><a href="index.html">Inicio</a></li>
-                                                <li><a href="#section-nuevos">Articulos Nuevos</a></li>
-                                                <li><a href="">Categorias</a></li>
-                                                <li><a href="login.html">Iniciar Sesión</a></li>
-                                              </ul>
-                        <!--
-                        <nav class="navbar navbar-expand-lg nav-bestprices ">
-                                <a class="navbar-brand ml-3 text-white" href="#">BESTPRICES</a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                        aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <form class="form-inline my-2 my-lg-0 mr-4">
-                                        <input class="form-control mr-sm-2 input-header_search" type="search"
-                                                placeholder="Search" aria-label="Search">
-                                        <button class="btn btn-outline-success  btn-search_navbar my-2 my-sm-0 text-white"
-                                                type="submit">Search</button>
-                                </form>
-                                <div class="collapse navbar-collapse flex-row-reverse mr-4" id="navbarSupportedContent">
-                                        <ul class="navbar-nav">
-                                                <li class="nav-item active mr-3">
-                                                        <a class="nav-link text-white" href="#">Home</a>
-                                                </li>
-                                                <li class="nav-item mr-3">
-                                                        <a class="nav-link text-white" href="#">Articulos Nuevos</a>
-                                                </li>
-                                                <li class="nav-item  mr-3">
-                                                        <a class="nav-link text-white" href="#">
-                                                                Categorias
-                                                        </a>
-
-                                                </li>
-                                                <li class="nav-item">
-                                                        <a class="nav-link text-white" href="./login.html">Iniciar
-                                                                Sesion</a>
-                                                </li>
-                                        </ul>
-
-                                </div>
-                        </nav>
-                        <div class="header-animation">
-                                <p>Encuentras lo que buscas al mejor precio </p>
-                        </div>-->
-                        <img src="./img/hero.jpg" alt="image hero" class="img-fluid   ">
-
-
-
-                </header>
-
-                <div class="row section-inicio pb-4 ">
-                        <h2 class="col-12 text-center mt-5 mb-4 ">¡Hola! Estás en BestPrices</h2>
-                        <div class="col-lg-8 mx-auto ">
-                                <div class="section-inicio__imagen1 w-100">
-                                        <img src="img/gtx-2080ti-firssection.jpg" class="w-100" alt="">
-                                </div>
-                                <div class="section-inicio__imagen2 w-50 mt-4 mr-4 float-left">
-                                        <img src="img/2nd_Gen_AMD_Ryzen_Threadripper_1260x709.webp" class="w-100"
-                                                alt="">
-                                </div>
-                                <div class="section-inicio__imagen3 w-49 mt-4">
-                                        <img src="img/lenovo-laptop-firstsection.jpg" class="" alt="">
-                                </div>
-
-
-
-
-
+    <div class="container-fluid">
+        <header>
+                
+                <nav class="navbar navbar-expand-lg navbar-dark ">
+                        <a class="navbar-brand" href="./index.html">BESTPRICES</a>
+                        <form class="form-inline my-2 my-lg-0 search-navbar">
+                                <input class="form-control mr-sm-2 input-search" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
+                                <button class="btn btn-outline-success btn-bestprices my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                              </form>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Articulos nuevos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Categorias
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">tarjetas madre</a>
+                                <a class="dropdown-item" href="#">Tarjeta de video</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="#">Iniciar Sesión</a>
+                            </li>
+                          </ul>
+                          
                         </div>
+                      </nav>
+                      
+                      <img src="./img/hero.jpg" alt="hombre comprando best prices" class="img-fluid">
+                      
+        </header>
+        <div class="col-12 text-center mt-4 "><h2 class=" color-title titulo">¡Hola! Estás en BestPrices</h2></div>
+    </div>
+        <!-- Grid row -->
+        <div class="container">
+                <div class="row">
 
-
-
-                </div>
-
-
-
-
-
-
-
-                <div class="row section-destacados ">
-                        <h2 class="col-lg-4 offset-lg-2 text-left mt-5">Destacados</h2>
-
-                        <div class="container-articles mb-5  ">
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/_20180212145116_Mini_Micro_Cases.png" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/_20180212145116_Mini_Micro_Cases.png" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/_20180212145116_Mini_Micro_Cases.png" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/_20180212145116_Mini_Micro_Cases.png" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/_20180212145116_Mini_Micro_Cases.png" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/_20180212145116_Mini_Micro_Cases.png" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/_20180212145116_Mini_Micro_Cases.png" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/_20180212145116_Mini_Micro_Cases.png" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/_20180212145116_Mini_Micro_Cases.png" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/_20180212145116_Mini_Micro_Cases.png" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/_20180212145116_Mini_Micro_Cases.png" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/_20180212145116_Mini_Micro_Cases.png" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
+                        <!-- Grid column -->
+                        <div class="col-md-12 text-center mt-4 mb-3">
+                      
+                          <img src="./img/gtx-2080ti-firssection.jpg" class="img-fluid z-depth-1" alt="">
+                      
                         </div>
-                </div>
-
-                <div class="row section-nuevos " id="section-nuevos">
-                        <h2 class="col-lg-4 offset-lg-2 text-left mt-5">Articulos Nuevos</h2>
-                        <div class="container-articles mb-5 ">
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/sapphire-r9-290-4gb-gddr5-battlefield-4-limited-edition.jpg"
-                                                        alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-4">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-                                </div>
-
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/msi-geforce-rtx-2070-gaming-z-8-gb.jpg" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/_20180212145116_Mini_Micro_Cases.png" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/Magnetic-Hard-Drive-vs-SATA-SSD-vs-M2-NVMe.jpg" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/sapphire-r9-290-4gb-gddr5-battlefield-4-limited-edition.jpg"
-                                                        alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-4">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-                                </div>
-
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/msi-geforce-rtx-2070-gaming-z-8-gb.jpg" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/_20180212145116_Mini_Micro_Cases.png" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/Magnetic-Hard-Drive-vs-SATA-SSD-vs-M2-NVMe.jpg" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/Magnetic-Hard-Drive-vs-SATA-SSD-vs-M2-NVMe.jpg" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/Magnetic-Hard-Drive-vs-SATA-SSD-vs-M2-NVMe.jpg" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/Magnetic-Hard-Drive-vs-SATA-SSD-vs-M2-NVMe.jpg" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-                                <div class="card-article">
-                                        <div class="card-article__img">
-                                                <img src="img/Magnetic-Hard-Drive-vs-SATA-SSD-vs-M2-NVMe.jpg" alt="">
-                                        </div>
-                                        <div class="card-article_text text-left ml-3">
-                                                <p>MSI GeForce RTX- 2080 - 8GB VENTUS</p>
-                                                <div class="card-article_description">
-                                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
-                                                        perfil elegante y u..
-                                                </div>
-                                                <div class="card-article_price">
-                                                        Ver Producto
-                                                </div>
-                                        </div>
-
-                                </div>
-
-
-
-
+                        <!-- Grid column -->
+                      
+                      </div>
+                      <!-- Grid row -->
+                      
+                      <!-- Grid row -->
+                      <div class="row">
+                      
+                        <!-- Grid column -->
+                        <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
+                      
+                          <img src="./img/AMD-Ryzen-3000-Ryzen-3-3200G-APU-1-firstsection best price.jpg" class="img-fluid z-depth-1"
+                            alt="Responsive image">
+                      
                         </div>
-                </div>
-                <footer class="container-footer text-center text-white">
-                        <a href=""><img src="img/Logo.png" alt=""></a>
-                        <ul>
-                                <li><a href="https://facebook.com"><img src="img/facebook.png" alt=""></a></li>
-                                <li><a href="https://instagram.com"><img src="img/instagram.png" alt=""></a></li>
-                                <li><a href="https://twitter.com"><img src="img/twitter.png" alt=""></a></li>
-                                <li><a href=""><img src="img/share.png" alt=""></a></li>
-                        </ul>
-                        <p>Copyright © 1999-2019 BestPrice´s Technology</p>
-                </footer>
-
-
-
+                        <!-- Grid column -->
+                      
+                               <!-- Grid column -->
+                        <div class="col-lg-6 col-md-6 col-sm-6  mb-3">
+                      
+                          <img src="./img/Intel-processor-firstsection.jpg" class="img-fluid z-depth-1"
+                            alt="Responsive image">
+                      
+                        </div>
+                        <!-- Grid column -->
+                      
+                      </div>
+                      <!-- Grid row -->
+                      
 
         </div>
 
+        <div class="container ">
+                <h2 class="text-left mb-3 color-title linea-horizontal">Articulos destacados</h2>
+                <div class="card-deck">
+                        <div class="card">
+                            <p class="bg-dark text-light position-absolute card-tipoProducto ">Artículo usado</p>
+                          <img class="card-img-top" src="img/_20180212145116_Mini_Micro_Cases.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title color-title">MSI GeForce RTX- 2080 - 8GB VENTUS</h5>
+                            <p class="card-text">
+                                    Los auriculares Skullcandy INK'D 2 Earbud presentan un
+                                    perfil elegante y u..
+                            </p>
+                            <p class="card-text"><small class="text-muted">Añadido por <a href="./profile.html" class="text-info">thanos</a> </small></p>
+                            <p class="card-text"><small class="text-primary">₡30000</small></p>
+                            
+                          </div>
+                        </div>
+                        <div class="card">
+                            <p class="bg-dark text-light position-absolute card-tipoProducto ">Artículo nuevo</p>
+                         
+                          <img class="card-img-top" src="img/sapphire-r9-290-4gb-gddr5-battlefield-4-limited-edition.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title color-title">MSI GeForce RTX- 2080 - 8GB VENTUS</h5>
+                            <p class="card-text">
+                                    Los auriculares Skullcandy INK'D 2 Earbud presentan un
+                                    perfil elegante y u..
+                            </p>
+                            <p class="card-text"><small class="text-muted">Añadido por <a href="./profile.html" class="text-info">thanos</a> </small></p>
+                            <p class="card-text"><small class="text-primary">₡30000</small></p> </div>
+                        </div>
+                        <div class="card">
+                            <p class="bg-dark text-light position-absolute card-tipoProducto ">Artículo usado</p>
+                          <img class="card-img-top" src="img/gtx-1050ti-4gb-ddr5-oc-msi-usada-D_NQ_NP_902286-MLA29956071020_042019-F.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title color-title">MSI GeForce RTX- 2080 - 8GB VENTUS</h5>
+                            <p class="card-text">
+                                    Los auriculares Skullcandy INK'D 2 Earbud presentan un
+                                    perfil elegante y u..
+                            </p>
+                            <p class="card-text"><small class="text-muted">Añadido por <a href="./profile.html" class="text-info">thanos</a> </small></p>
+                            <p class="card-text"><small class="text-primary">₡30000</small></p>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="card-deck card-deck__second mt-4">
+                            <div class="card">
+                                <p class="bg-dark text-light position-absolute card-tipoProducto ">Artículo usado</p>
+                              <img class="card-img-top" src="img/msi-geforce-rtx-2070-gaming-z-8-gb.jpg" alt="Card image cap">
+                              <div class="card-body color-title">
+                                <h5 class="card-title">MSI GeForce RTX- 2080 - 8GB VENTUS</h5>
+                                <p class="card-text">
+                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
+                                        perfil elegante y u..
+                                </p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <p class="bg-dark text-light position-absolute card-tipoProducto ">Artículo usado</p>
+                              <img class="card-img-top" src="img/_20180212145116_Mini_Micro_Cases.png" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title color-title">MSI GeForce RTX- 2080 - 8GB VENTUS</h5>
+                                <p class="card-text">
+                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
+                                        perfil elegante y u..
+                                </p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <p class="bg-dark text-light position-absolute card-tipoProducto ">Artículo usado</p>
+                              <img class="card-img-top" src="img/_20180212145116_Mini_Micro_Cases.png" alt="Card image cap">
+                              <div class="card-body">
+                                <h5 class="card-title color-title">MSI GeForce RTX- 2080 - 8GB VENTUS</h5>
+                                <p class="card-text">
+                                        Los auriculares Skullcandy INK'D 2 Earbud presentan un
+                                        perfil elegante y u..
+                                </p>
+                                <p class="card-text"><small class="text-muted">Añadido por <a href="./profile.html" class="text-info">thanos</a> </small></p>
+                            <p class="card-text"><small class="text-primary">₡30000</small></p>
+                              </div>
+                            </div>
+                            
+                          </div>
+                   
+            
+        </div>
+        <div class="container">
+                <h2 class="text-left mb-3 color-title linea-horizontal">Articulos Nuevos</h2>
+                <div class="card-deck">
+                       <div class="card">
+                          <p class="bg-dark text-light position-absolute card-tipoProducto ">Artículo nuevo</p>
+                      
+                            <img class="card-img-top" src="img/_20180212145116_Mini_Micro_Cases.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">MSI GeForce RTX- 2080 - 8GB VENTUS</h5>
+                              <p class="card-text">
+                                      Los auriculares Skullcandy INK'D 2 Earbud presentan un
+                                      perfil elegante y u..
+                              </p>
+                              <p class="card-text"><small class="text-muted">Añadido por <a href="./profile.html" class="text-info">thanos</a> </small></p>
+                              <p class="card-text"><small class="text-primary">₡30000</small></p>
+                            </div>
+                          </div>
+                          <div class="card">
+                              <p class="bg-dark text-light position-absolute card-tipoProducto ">Artículo nuevo</p>
+                            <img class="card-img-top" src="img/_20180212145116_Mini_Micro_Cases.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">MSI GeForce RTX- 2080 - 8GB VENTUS</h5>
+                              <p class="card-text">
+                                      Los auriculares Skullcandy INK'D 2 Earbud presentan un
+                                      perfil elegante y u..
+                              </p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                          <div class="card">
+                              <p class="bg-dark text-light position-absolute card-tipoProducto ">Artículo nuevo</p>
+                                <img class="card-img-top" src="img/CP-SEASONIC-SSR-850TD-1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">MSI GeForce RTX- 2080 - 8GB VENTUS</h5>
+                                  <p class="card-text">
+                                          Los auriculares Skullcandy INK'D 2 Earbud presentan un
+                                          perfil elegante y u..
+                                  </p>
+                                  <p class="card-text"><small class="text-muted">Añadido por <a href="./profile.html" class="text-info">thanos</a> </small></p>
+                            <p class="card-text"><small class="text-primary">₡30000</small></p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="card-deck card-deck__second mt-4">
+                                <div class="card">
+                                    <p class="bg-dark text-light position-absolute card-tipoProducto ">Artículo nuevo</p>
+                                     <img class="card-img-top" src="img/_20180212145116_Mini_Micro_Cases.png" alt="Card image cap">
+                                     <div class="card-body">
+                                       <h5 class="card-title">MSI GeForce RTX- 2080 - 8GB VENTUS</h5>
+                                       <p class="card-text">
+                                               Los auriculares Skullcandy INK'D 2 Earbud presentan un
+                                               perfil elegante y u..
+                                       </p>
+                                       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                     </div>
+                                   </div>
+                                   <div class="card">
+                                      <p class="bg-dark text-light position-absolute card-tipoProducto ">Artículo nuevo</p>
+                                     <img class="card-img-top" src="img/_20180212145116_Mini_Micro_Cases.png" alt="Card image cap">
+                                     <div class="card-body">
+                                       <h5 class="card-title">MSI GeForce RTX- 2080 - 8GB VENTUS</h5>
+                                       <p class="card-text">
+                                               Los auriculares Skullcandy INK'D 2 Earbud presentan un
+                                               perfil elegante y u..
+                                       </p>
+                                       <p class="card-text"><small class="text-muted">Añadido por <a href="./profile.html" class="text-info">thanos</a> </small></p>
+                            <p class="card-text"><small class="text-primary">₡30000</small></p>
+                                     </div>
+                                   </div>
+                                   <div class="card">
+                                      <p class="bg-dark text-light position-absolute card-tipoProducto ">Artículo nuevo</p>
+                                         <img class="card-img-top" src="img/_20180212145116_Mini_Micro_Cases.png" alt="Card image cap">
+                                         <div class="card-body">
+                                           <h5 class="card-title">MSI GeForce RTX- 2080 - 8GB VENTUS</h5>
+                                           <p class="card-text">
+                                                   Los auriculares Skullcandy INK'D 2 Earbud presentan un
+                                                   perfil elegante y u..
+                                           </p>
+                                           <p class="card-text"><small class="text-muted">Añadido por <a href="./profile.html" class="text-info">thanos</a> </small></p>
+                            <p class="card-text"><small class="text-primary">₡30000</small></p>
+                                         </div>
+                                       </div>
+                                 </div>
+            
+        </div>
+                  
 
+        <!-- Footer -->
+<footer class="page-footer font-small bg-dark mt-5">
 
+        <!-- Footer Elements -->
+        <div class="container">
+      
+          <!-- Grid row-->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-12 py-5">
+              <div class="mb-5 flex-center">
+      
+                <!-- Facebook -->
+                <a class="fb-ic">
+                  <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic">
+                  <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <!-- Google +-->
+                <a class="gplus-ic">
+                  <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic">
+                  <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                  <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <!--Pinterest-->
+                <a class="pin-ic">
+                  <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                </a>
+              </div>
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row-->
+      
+        </div>
+        <!-- Footer Elements -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="./home.html"> Bestprices.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script type="text/javascript" src="./js/slick/slick.min.js"></script>
-        <script>
-                $(document).ready(function () {
-                        $('.sidenav').sidenav();
-                        $(function () {
-                                $('.container-articles').slick({
-                                        infinite: true,
-                                        slidesToShow: 4,
-                                        slidesToScroll: 3,
-                                        arrows: false,
-                                        dots: false,
-                                        responsive: [{
-                                                        breakpoint: 768,
-                                                        settings: {
-                                                                slidesToShow: 3,
-                                                                slidesToScroll: 1,
-                                                                arrows: false,
-                                                                dots: false
-                                                        }
-                                                },
-                                                {
-                                                        breakpoint: 480,
-                                                        settings: {
-                                                                slidesToShow: 2,
-                                                                slidesToScroll: 1,
-                                                                arrows: false,
-                                                                dots: false
-                                                        }
-                                                }
-                                        ]
-                                });
-                                $('#next').click(function () {
-                                        $('.your-class').slick(
-                                                'slickNext');
-                                });
-                                $('#prev').click(function () {
-                                        $('.your-class').slick(
-                                                'slickPrev');
-                                });
-                        });
+      
 
-                })
+ 
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./js/bcSwipe-master/jquery.bcSwipe.js"></script>
+    <script>
+        $(document).ready(function() {
+            /*
+  $("#myCarousel").on("slide.bs.carousel", function(e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 3;
+    var totalItems = $(".carousel-item").length;
+
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i = 0; i < it; i++) {
+        // append slides to end
+        if (e.direction == "left") {
+          $(".carousel-item")
+            .eq(i)
+            .appendTo(".carousel-inner");
+        } else {
+          $(".carousel-item")
+            .eq(0)
+            .appendTo($(this).find(".carousel-inner"));
+        }
+      }
+    }
+  });*/
+});
+
         </script>
-
-
 </body>
 
 </html>

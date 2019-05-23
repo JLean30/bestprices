@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans");
 .slick-track {
@@ -78,6 +79,10 @@ header nav {
   width: 100%;
   padding: 10px;
   padding: 1em !important; }
+  header nav .nav-bestprice {
+    background-color: #000000; }
+  header nav .nav-bestprices__alternative {
+    position: unset; }
   header nav form {
     height: 100%;
     width: 41%;
@@ -381,6 +386,39 @@ header nav {
         margin-left: 15px;
         margin-right: 15px;
         margin-bottom: 15px; }
+
+.section-perfil {
+  box-shadow: rgba(0, 0, 0, 0.144) 0px 7px 10px;
+  width: 100%; }
+  .section-perfil .container-perfil {
+    display: inline-flex; }
+    @media only screen and (max-width: 480px) {
+      .section-perfil .container-perfil {
+        display: flex; } }
+    .section-perfil .container-perfil .container-perfil__image {
+      width: 85%;
+      -webkit-clip-path: circle(32.9% at 50% 50%);
+      clip-path: circle(32.9% at 50% 50%); }
+    .section-perfil .container-perfil .container-perfil__descripción {
+      top: 34%;
+      left: -3%; }
+      @media only screen and (max-width: 480px) {
+        .section-perfil .container-perfil .container-perfil__descripción {
+          position: unset; } }
+      .section-perfil .container-perfil .container-perfil__descripción p {
+        width: 68%; }
+  .section-perfil .container-perfil__nav {
+    display: inline-flex;
+    justify-content: center;
+    font-size: 19px;
+    position: relative;
+    top: 15px;
+    left: 7%; }
+    .section-perfil .container-perfil__nav .active {
+      border-bottom: 3px solid #176eb9; }
+    .section-perfil .container-perfil__nav p {
+      cursor: pointer;
+      margin-right: 20%; }
 
 @keyframes slide-header {
   0% {
