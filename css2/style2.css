@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap");
 #custom-search-input {
   margin: 0;
   margin-top: 10px;
@@ -35,7 +36,7 @@
   z-index: 3; }
 
 body {
-  font-family: 'fira-sans', sans-serif; }
+  font-family: 'Fira Sans', sans-serif; }
 
 .container-fluid {
   padding: 0; }
@@ -89,17 +90,17 @@ a {
   background: transparent; }
 
 header {
-  /*
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: black;
-        opacity: 0.5;
-        z-index: 1;
-      }*/ }
+  max-height: 40vw;
+  overflow: hidden; }
+  @media only screen and (max-width: 767px) {
+    header {
+      height: 80vw !important;
+      max-height: unset; } }
+  header .btn-header {
+    width: 25% !important; }
+    @media only screen and (max-width: 480px) {
+      header .btn-header {
+        width: 50% !important; } }
   header nav {
     background-color: #000000; }
     @media only screen and (max-width: 480px) {
@@ -131,21 +132,50 @@ header {
       header nav .search-navbar .input-search {
         width: 80%; }
 
-.card {
+.container-productos {
+  widows: 80% !important; }
+  @media only screen and (max-width: 480px) {
+    .container-productos {
+      width: 95% !important; } }
+
+.card-deck .card {
   border: unset !important;
   border-radius: unset !important; }
+  @media only screen and (max-width: 480px) {
+    .card-deck .card {
+      flex-flow: row; } }
 
-.card-img-top {
+.card-deck .card-img-top {
   padding: 5%;
   height: 15vw;
   object-fit: contain; }
   @media only screen and (max-width: 480px) {
-    .card-img-top {
-      height: auto; } }
+    .card-deck .card-img-top {
+      width: 50%;
+      height: 53vw; } }
 
 @media only screen and (max-width: 480px) {
-  .card-deck__second {
+  .card-deck .card-deck__second {
     display: none; } }
+
+@media only screen and (max-width: 480px) {
+  .card-deck .card-body h5 {
+    font-size: 1rem !important; } }
+
+@media only screen and (max-width: 480px) {
+  .card-deck .card-body {
+    font-size: 0.7em;
+    padding: 0.7em; } }
+
+.card-deck .card-tipoProducto {
+  background-color: #1B6A89 !important;
+  top: 2em;
+  padding: 0.3em;
+  width: 8em; }
+  @media only screen and (max-width: 480px) {
+    .card-deck .card-tipoProducto {
+      font-size: .7em;
+      top: 1em; } }
 
 .color-title {
   color: #1B6A89 !important; }
@@ -162,7 +192,8 @@ header {
   margin-top: 2.5em; }
 
 .titulo {
-  font-size: 3.5em; }
+  font-weight: 600;
+  font-size: 4.5em; }
   .titulo::after {
     display: none; }
   @media only screen and (max-width: 480px) {
@@ -204,12 +235,6 @@ header {
     width: 70%;
     margin-bottom: 1rem;
     margin: auto; }
-
-.card-tipoProducto {
-  background-color: #1B6A89 !important;
-  top: 2em;
-  padding: 0.3em;
-  width: 8em; }
 
 @media only screen and (max-width: 480px) {
   .tamanno-title__cel {
