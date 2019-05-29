@@ -335,8 +335,17 @@ footer{
 .media{
     background-color: white;
     max-width: 85%;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.678);
+   
     margin: auto;
+
+    .media-message{
+        height: 7vw;
+        max-width: 95% !important;
+        cursor: pointer;
+    }
+    .img-message{
+        height: 5.2vw !important;
+    }
     @include respond-to($phone){
         flex-flow: column;
         width: 300px;
